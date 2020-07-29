@@ -1,0 +1,14 @@
+cycle 1:
+    DAPI: "/example/path/channel_1_cycle_1.tif"
+    Cy3: "/example/path/channel_2_cycle_1.tif"
+    TR: "/example/path/channel_3_cycle_1.tif"
+    Cy5: "/example/path/channel_4_cycle_1.tif"
+    Cy7: "/example/path/channel_5_cycle_1.tif"
+
+cycle 2:
+    DAPI: "/example/path/channel_1_cycle_2.tif"
+    Cy3: "/example/path/channel_2_cycle_2.tif"
+    TR: "/example/path/channel_3_cycle_2.tif"
+    Cy5: "/example/path/channel_4_cycle_2.tif"
+    Cy7: "/example/path/channel_5_cycle_2.tif"
+
