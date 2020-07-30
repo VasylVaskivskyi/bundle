@@ -81,9 +81,8 @@ def get_dimensions_per_cycle(cycle_map: dict):
 
 def generate_channel_meta(channel_names: List[str], cycle_id: int, offset: int):
     channel_elements = []
-    for i, ch in enumerate(channel_names):
-        new_channel_name = 'c' + format(cycle_id, '02d') + ' ' + ch
-        channel_attrib = {'ID': 'Channel:0:' + str(offset + i), 'Name': new_channel_name, 'SamplesPerPixel':"1"}
+    for i, channel_name in enumerate(channel_names):
+        channel_attrib = {'ID': 'Channel:0:' + str(offset + i), 'Name': channel_name, 'SamplesPerPixel':"1"}
         channel = ET.Element('Channel', channel_attrib)
         channel_elements.append(channel)
     return channel_elements
